@@ -9,7 +9,7 @@ qtBtn.addEventListener("click", evt => {
             return response.json();
         })
         .then(function (data) {
-            wordList = []
+            var wordList = []
             data.forEach(element => {
                 var text = element.text.toLowerCase()
                 if (text.includes(getInput.value.toLowerCase())) {
